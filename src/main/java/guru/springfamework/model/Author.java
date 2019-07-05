@@ -1,4 +1,4 @@
-package guru.springfamework.spring5webapp.model;
+package guru.springfamework.model;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -26,6 +26,11 @@ public class Author{
 
     public Author(Long id, String firstName, String lastName) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
